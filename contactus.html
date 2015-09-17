@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Synaptic Media - Home</title>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main CSS -->
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script><!-- load spry menu bar -->
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script><!-- load spry text field validation -->
+<script src="SpryAssets/SpryValidationRadio.js" type="text/javascript"></script><!-- load radio validation -->
+
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" /><!-- load spry menu bar css -->
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" /><!-- load spry text validation css -->
+<link href="css/forms.css" rel="stylesheet" type="text/css" /><!-- load forms css -->
+<link href="SpryAssets/SpryValidationRadio.css" rel="stylesheet" type="text/css" /><!-- load spry radio validation css -->
+</head>
+
+<body>
+  <div class="container">
+    <header class="sixteen columns"> 
+      <img src="images/header2.jpg" alt="Synapse Header" border="0" usemap="#Map" /><!-- begin header -->
+      <map name="Map" id="Map">
+        <area shape="circle" coords="138,100,66" href="index.html" alt="Synaptic Media Home" />
+      </map>
+
+      <nav>
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li><a href="index.html" class="borderRadius">Home</a>      </li>
+          <li><a href="services.html" class="MenuBarItemSubmenu" class="borderRadius">Services</a>
+            <ul>
+              <li><a href="webdeveloping.html">Web Developing</a></li>
+              <li><a href="brandingmarketing.html" >Branding &amp; Marketing</a></li>
+              <li><a href="contentcreation.html" >Content Creation</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html" class="borderRadius">About Us</a>      </li>
+          <li><a href="contactus.html" class="borderRadius">Contact Us</a></li>
+        </ul> 
+      </nav><!-- end header -->
+    </header>
+  </div>
+  
+  <div class="container"><!-- begin content container -->
+    <div class="sixteen columns"><!-- begin boxexp -->
+	  <form id="contactus" name="contactus" method="post" action="email_form.php"><!-- begin form -->
+<legend>Contact Information</legend><p><span id="sprytextfield1">
+		    <label for="name">Name:</label>
+		    <input type="text" name="name" id="name" />
+	      <span class="textfieldRequiredMsg">Name required.</span></span>
+        </p>
+	    <p><span id="sprytextfield2">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" />
+          <span class="textfieldRequiredMsg">Email address required.</span><span class="textfieldInvalidFormatMsg">Please enter a valid email address.</span></span></p>
+	    <legend>Additional Information</legend><h3>What do you need our services for?</h3>
+	      <p><span id="services">
+	        <label>
+	          <input type="radio" name="services" value="blog" id="services_1" />
+	          Blog</label>
+	        <br />
+	        <label>
+	          <input type="radio" name="services" value="portfolio" id="services_2" />
+	          Portfolio</label>
+	        <br />
+	        <label>
+	          <input type="radio" name="services" value="smallbusiness" id="services_3" />
+	          Small Business</label>
+	        <br />
+	        <label>
+	          <input type="radio" name="services" value="corporation" id="services_4" />
+	          Corporation</label>
+	        <br />
+	        <label>
+	          <input type="radio" name="services" value="government" id="services_5" />
+	          Government</label>
+	        <br />
+	        <label>
+	          <input type="radio" name="services" value="other" id="services_6" />
+	          Other</label>
+	        <br />
+          <span class="radioRequiredMsg">Please make a selection.</span></span></p>
+          
+        <h3>What services do you think you will need?</h3>
+  <p>
+            <label>
+              <input type="checkbox" name="Work" value="webdesign" id="Work_0" />
+              Web Design</label>
+            <br />
+            <label>
+              <input type="checkbox" name="Work" value="appdev" id="Work_1" />
+              App Development</label>
+            <br />
+            <label>
+              <input type="checkbox" name="Work" value="branding" id="Work_2" />
+              Branding</label>
+            <br />
+            <label>
+              <input type="checkbox" name="Work" value="marketing" id="Work_3" />
+              Marketing</label>
+            <br />
+            <label>
+              <input type="checkbox" name="Work" value="content" id="Work_4" />
+              Content Creation</label>
+            <br />
+        </p>
+        <h3>Do you have any additional comments or questions?</h3>
+        <p>
+            <textarea name="comments" id="comments" cols="75" rows="5"></textarea>
+          </p>
+          <p>
+            <input type="submit" name="submit" id="submit" value="Submit" />
+            <input type="reset" name="reset" id="reset" value="Reset" />
+          </p>
+      </form><!-- end form -->
+    </div><!-- end boxexp -->
+  </div><!-- end content container -->
+
+  <div class="container">
+    <footer class="sixteen columns"><!-- begin footer -->
+      <p>Copyright &copy; 2011 Aaron Etchison</p>
+      <p><a href = "termsofuse.html">Terms of Use </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href = "contactwebmaster.html">Contact Webmaster</a>
+      </p>
+    </footer>
+  </div><!-- end footer -->
+
+<script type="text/javascript"><!-- spry scripts -->
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email", {validateOn:["blur"]});
+var spryradio1 = new Spry.Widget.ValidationRadio("services");
+</script>
+</body>
+</html>

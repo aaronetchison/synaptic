@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Synaptic Media - Home</title>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main CSS -->
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script><!-- load spry menu bar -->
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script><!-- load spry text field validation -->
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script><!-- load spry text area validation -->
+
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" /><!-- load spry menu bar css -->
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" /><!-- load spry validation css  -->
+<link href="css/forms.css" rel="stylesheet" type="text/css" /><!-- load forms css -->
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" /><!-- load spry validation css 2 -->
+</head>
+
+<body>
+  <div class="container">
+    <header class="sixteen columns"> 
+      <img src="images/header2.jpg" alt="Synapse Header" border="0" usemap="#Map" /><!-- begin header -->
+      <map name="Map" id="Map">
+        <area shape="circle" coords="138,100,66" href="index.html" alt="Synaptic Media Home" />
+      </map>
+
+      <nav>
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li><a href="index.html" class="borderRadius">Home</a>      </li>
+          <li><a href="services.html" class="MenuBarItemSubmenu" class="borderRadius">Services</a>
+            <ul>
+              <li><a href="webdeveloping.html">Web Developing</a></li>
+              <li><a href="brandingmarketing.html" >Branding &amp; Marketing</a></li>
+              <li><a href="contentcreation.html" >Content Creation</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html" class="borderRadius">About Us</a>      </li>
+          <li><a href="contactus.html" class="borderRadius">Contact Us</a></li>
+        </ul> 
+      </nav><!-- end header -->
+    </header>
+  </div>
+  
+  <div class="container"><!-- begin content container -->
+    <div class="sixteen columns"><!-- begin box exp -->
+      <form id="contactwebmaster" name="contactwebmaster" method="post" action="email_webmaster.php"><!-- begin form -->
+      <fieldset><legend>Contact Information</legend>
+      <p><span id="sprytextfield1">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <span class="textfieldRequiredMsg">Enter your name.</span></span></p>
+      <p><span id="sprytextfield2">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" />
+      <span class="textfieldRequiredMsg">Enter your email address.</span><span class="textfieldInvalidFormatMsg">Please enter a valid email address.</span></span></p></fieldset>
+      <fieldset>
+        <legend>Comments & Questions</legend>
+        <h3>What is your comment or question for our Webmaster?</h3>
+        <p><span id="sprytextarea1">
+        <textarea name="comments" id="comments" cols="75" rows="5"></textarea>
+        <span class="textareaRequiredMsg">Please enter a message.</span></span></p>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" id="submit" value="Submit" />
+        <input type="reset" name="reset" id="reset" value="Reset" />
+      </p>
+      </form><!-- end form -->
+    </div><!-- end boxexp -->    
+  </div><!-- end content container -->
+
+  <div class="container">
+    <footer class="sixteen columns"><!-- begin footer -->
+      <p>Copyright &copy; 2011 Aaron Etchison</p>
+      <p><a href = "termsofuse.html">Terms of Use </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href = "contactwebmaster.html">Contact Webmaster</a>
+      </p>
+    </footer>
+  </div><!-- end footer -->
+
+<script type="text/javascript"><!-- spry scripts -->
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email", {validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"]});
+</script>
+</body>
+</html>

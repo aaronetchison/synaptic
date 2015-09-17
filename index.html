@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Synaptic Media - Home</title>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main CSS -->
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script><!-- load Spry Menu Bar -->
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script><!-- load swf object loader -->
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" /><!-- load spry menu bar 2 -->
+</head>
+
+<body>
+  <div class="container">
+    <header class="sixteen columns"> 
+      <img src="images/header2.jpg" alt="Synapse Header" border="0" usemap="#Map" /><!-- begin header -->
+      <map name="Map" id="Map">
+        <area shape="circle" coords="138,100,66" href="index.html" alt="Synaptic Media Home" />
+      </map>
+
+      <nav>
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li><a href="index.html" class="borderRadius">Home</a>      </li>
+          <li><a href="services.html" class="MenuBarItemSubmenu" class="borderRadius">Services</a>
+            <ul>
+              <li><a href="webdeveloping.html">Web Developing</a></li>
+              <li><a href="brandingmarketing.html" >Branding &amp; Marketing</a></li>
+              <li><a href="contentcreation.html" >Content Creation</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html" class="borderRadius">About Us</a>      </li>
+          <li><a href="contactus.html" class="borderRadius">Contact Us</a></li>
+        </ul> 
+      </nav><!-- end header -->
+    </header>
+  </div>
+  
+  <div class="container"><!-- begin content container -->
+    <div class="sixteen columns"><!-- begin boxFull top -->
+   	    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="840" height="230" id="FlashID" title="Synaptic Media Services">
+   	      <param name="movie" value="images/home_flash.swf" />
+   	      <param name="quality" value="high" />
+   	      <param name="wmode" value="opaque" />
+   	      <param name="swfversion" value="6.0.65.0" />
+   	      <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+   	      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+   	      <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+   	      <!--[if !IE]>-->
+   	      <object type="application/x-shockwave-flash" data="images/home_flash.swf" width="840" height="230">
+   	        <!--<![endif]-->
+   	        <param name="quality" value="high" />
+   	        <param name="wmode" value="opaque" />
+   	        <param name="swfversion" value="6.0.65.0" />
+   	        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+   	        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+   	        <div>
+   	          <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+   	          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+            </div>
+   	        <!--[if !IE]>-->
+          </object>
+   	      <!--<![endif]-->
+        </object>
+
+    </div><!-- end boxFull top -->
+
+    <div class="one-third column"><!-- begin box left -->
+    	<h2>Web Developing</h2>
+        <p>Synaptic Media is one of the leading companies in the Web developing marketplace. We work with small to large businesses from a variety of industries. </p>
+        <p>We create Web sites and applications using the latest trends in design and functionality to meet the needs of our clients. </p>
+        <p>No matter what type or size of site or application you need, Synaptic Media can create it for you.</p>
+    </div><!-- end box left -->
+    
+    <div class="one-third column"><!-- begin box center -->
+    	<h2>Branding &amp; Marketing</h2>
+        <p>Synaptic media provides its clients with a variety of effective branding and marketing services for a low cost. </p>
+        <p>If you need a complete brand design, or just want to redevelop your current brand, Synaptic Media can help you achieve the look you want. </p>
+        <p>Synaptic Media also provides Web, television, radio and print marketing services to get your brand out to the world. </p>
+    </div><!-- end box center -->
+    
+    <div class="one-third column"><!-- begin box right -->
+    	<h2>Content Creation</h2>
+        <p>Synaptic Media has a team of professionals that can provide you with some of the content you need to get your site up and running </p>
+        <p>We offer a variety of video and animation services that can give your site an edge on the competition. </p>
+        <p>Our content creation services are not limited to the Web. We can provide you with radio and television advertisements as well.</p>
+    </div><!-- end box right -->
+    
+  </div><!-- end content container -->
+  <div class="container">
+    <footer class="sixteen columns"><!-- begin footer -->
+    	<p>Copyright &copy; 2011 Aaron Etchison</p>
+    	<p><a href = "termsofuse.html">Terms of Use </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+    	<a href = "contactwebmaster.html">Contact Webmaster</a>
+    	</p>
+    </footer>
+  </div><!-- end footer -->
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>

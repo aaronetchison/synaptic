@@ -1,0 +1,11 @@
+fieldset {
+	border: 2px solid #f15a22;
+	padding: 10px;
+	margin: 10px;
+}
+legend {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: #f15a22;
+	font-weight: bold;
+}
