@@ -1,18 +1,54 @@
-@import 'skeleton';
+@charset "utf-8";
+@import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,400);
+
+/*
+Site: Synaptic Media
+Version: 2.0
+Date: 09/01/2015
+*/
+
+/* TOC
+Variables
+General Styles
+Primary Navigation Styles
+Type Styles
+Link Styles
+Page Styles
+Forms
+Plugins
+Media Queries
+*/
+
+/* Variables */
+$dark-blue: 						#052335;
+$medium-blue:						#0A4568;
+$light-blue:						#0099CC;
+$orange:								#F15A22;
+$white:									#FFFFFF;
+
+/* General Styles */
+
+* {
+	box-sizing: border-box;
+}
 
 body {
-	background-color: #052335;
-	padding: 0px;
-	margin: 0px;
+	background-color: $dark-blue;
+	padding: 4em 0 0 0;
+	margin: 0;
+	font-size: 16px;
 }
 
 header {
-	margin: 0px;
-	padding: 0px;
-	background-color: #0A4568;
-	border-radius: 0em 0em 1em 1em;
-	/* for Firefox */	
-	-moz-border-radius: 0em 0em 1em 1em;
+	margin: 0;
+	padding: 0;
+	background-color: $medium-blue;
+}
+
+nav a {
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 header img {
@@ -20,215 +56,124 @@ header img {
 	height: auto;
 }
 
-#logo {
-	margin-top: 20px;
-	margin-left: 10px;
-	height: 80px;
-	width: 209px;
-}
-
-.noBorderRadius {
-	border-radius: 0em 0em 0em 0em;
-	/* for Firefox */	
-	-moz-border-radius: 0em 0em 0em 0em;
-}
-
-nav {
-	text-align: right;
-	margin: 0px;
-	padding: 0px;
-	background-color: #0a4568;
-	border-radius: 0em 0em 1em 1em;
-}
-
 footer {
-	margin: 0px;
-	padding: 0px;
-	height: 60px;
-	width: 860px;
-	background-color: #0A4568;
-	float: left;
-	border-radius: 1em 1em 0em 0em;
-	/* for Firefox */	
-	-moz-border-radius: 1em 1em 0em 0em;
+	margin: 0;
+	padding: 20px 0;
+	background-color: $medium-blue;
 }
 footer p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 1em;
 	color: #478CB5;
 	text-align: center;
-	margin: 0px;
+	margin: 0;
 	padding-top: 10px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
 }
 
-.module {
-	background-color: #0A4568;
-	padding: 0px;
-	margin-top: 10px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-	margin-left: 0px;
-	border-radius: 1em 1em 1em 1em;
+/* Typography */
+
+h1 {
+	font-family: 'Raleway', Geneva, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: $orange;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: 'Raleway', Geneva, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: $orange;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+h3 {
+	font-family: 'Raleway', Geneva, sans-serif;
+	font-size: 1.5em;
+	color: $light-blue;
+	margin: 0;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 0;
+}
+
+p {
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1em;
+	color: $white;
+	padding-top: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0;
+	margin-top: 5px;
 }
 
 
 li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #FFF;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1em;
+	color: $white;
 }
 
-table {
-	margin-top: 5px;
-	margin-right: 10px;
-	margin-left: 10px;
-}
 td {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #DDD;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1em;
+	color: $white;
 	border-top-width: 2px;
 	border-top-style: solid;
-	border-top-color: #F15A22;
+	border-top-color: $orange;
 	padding-top: 2px;
 	padding-right: 5px;
 	padding-bottom: 2px;
 	padding-left: 5px;
 }
 th {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
+	font-family: 'Raleway', Geneva, sans-serif;
+	font-size: 1em;
 	font-weight: bold;
-	color: #09c;
+	color: $light-blue;
 	text-align: left;
 	padding-bottom: 2px;
 	padding-left: 5px;
 }
 
 
-
-h2 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	color: #f15a22;
-	margin: 0px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-}
-h3 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	color: #09C;
-	margin: 0px;
-	font-weight: bold;
-	padding-left: 10px;
-	padding-top: 0px;
-}
-
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #DDD;
-	padding-top: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 0px;
-	margin-top: 5px;
-}
-.imgholderlarge {
-	background-color: #F0F0F0;
-	background-image: url(../images/imgholder.jpg);
-	background-repeat: repeat-y;
-	margin-top: 10px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 10px;
-	padding: 0px;
-}
-.fltlftimg  {
-	float: left;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom: 0px;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-.fltlftp  {
-	float: left;
-	width: 410px;
-	padding: 0px;
-	margin-top: 5px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	height: 80px;
-}
-
-
+/* Link Styles */
 
 a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #f15a22;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1em;
+	color: $light-blue;
 	text-decoration: none;
 }
 a:hover {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #09c;
+	color: $orange;
 }
 a:visited {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #09c;
+	color: $light-blue;
 }
-.fltlftp a {
-	font-size: 14px;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
+
+/* Page Styles */
+
+.module {
+	background-color: $medium-blue;
+	padding: 0;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	border-radius: 1em 1em 1em 1em;
 }
-.fltlftp h3 a {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #09c;
-	text-decoration: none;
-	margin: 0px;
-	padding: 0px;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-top-style: none;
-	border-right-style: none;
-}
-.fltlftp h3 a:hover {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #F15A22;
-	text-decoration: none;
-	margin: 0px;
-	padding: 0px;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-top-style: none;
-	border-right-style: none;
-}
+
+/* Forms */
+
+/* Plugins */
+
+/* Media Queries */

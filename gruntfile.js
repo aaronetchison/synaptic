@@ -10,7 +10,6 @@ module.exports = function(grunt) {
 		  	style: 'compressed'
 		  },
 		  files: {
-				'stylesheets/skeleton.css': 'sass/skeleton.scss',
 				'stylesheets/global.css': 'sass/styles.scss'
 		  }
 		}	
@@ -49,7 +48,7 @@ module.exports = function(grunt) {
 			tasks: ['htmlhint']
 		},
 		css: {
-			files: ['sass/*.scss'],
+			files: ['sass/*.scss', 'sass/bootstrap/*.scss'],
 			tasks: ['sass']
 		},
 		autoprefixer: {
@@ -66,6 +65,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass', 'autoprefixer']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'htmlhint']);
 
 };
