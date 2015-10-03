@@ -172,6 +172,15 @@ a:visited {
 	border-radius: 1em 1em 1em 1em;
 }
 
+.section-about {
+	img {
+		float: left;
+		margin-right: 10px;
+		border-radius: 50%;
+		clear: left;
+	}
+}
+
 /* Forms */
 
 /* Plugins */
