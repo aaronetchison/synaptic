@@ -43,7 +43,7 @@ body {
 header {
 	margin: 0;
 	padding: 0;
-	background-color: $medium-blue;
+	background-color: $dark-blue;
 }
 
 nav a {
@@ -57,9 +57,9 @@ header img {
 }
 
 footer {
-	margin: 0;
+	margin: 60px 0 0 0;
 	padding: 20px 0;
-	background-color: $medium-blue;
+	background-color: $dark-blue;
 }
 footer p {
 	font-size: 1em;
@@ -85,7 +85,7 @@ h1 {
 
 h2 {
 	font-family: 'Raleway', Geneva, sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
 	color: $orange;
 	margin: 0;
@@ -106,7 +106,7 @@ h3 {
 
 p {
 	font-family: 'Raleway', Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: $white;
 	padding-top: 0;
 	padding-left: 10px;
@@ -115,6 +115,16 @@ p {
 	margin-top: 5px;
 }
 
+.col-sm-4 p, .col-sm-6 p, .col-sm-4 div, .col-sm-6 div {
+	padding: 0 2em;
+}
+
+.col-sm-4 h2 + p, .col-sm-6 > h2 + p, .col-sm-4 h2 + div, .col-sm-6 h2 + div {
+	margin-top: -.4em;
+	padding-top: 1.2em;
+	border-top: 2px solid $medium-blue;
+	border-left: 2px solid $medium-blue;
+}
 
 li {
 	font-family: 'Raleway', Helvetica, sans-serif;
@@ -183,6 +193,202 @@ a:visited {
 
 /* Forms */
 
+form div {
+	margin-left: 10px;
+}
+
+form h3 {
+	margin-top: 1.2em;
+	margin-bottom: .6em;
+}
+
+.submit, .reset {
+	width: 120px;
+	padding: 10px;
+	margin-top: 1.2em;
+	margin-right: 1.2em;
+	background-color: $medium-blue;
+	color: $light-blue;
+	border: 2px solid $light-blue;
+	font-family: 'Raleway', Helvetica;
+	font-weight: bold;
+}
+
+.submit:hover, .submit:active, .submit:visited, .reset:hover, .reset:active, .reset:visited {
+	background-color: $medium-blue;
+	color: $orange;
+	border: 2px solid $orange;
+}
+
+.input {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 10px;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	height: 4em;
+	vertical-align: top;
+}
+
+.input__field {
+	position: absolute;
+	z-index: 100;
+	padding: 2.15em 0.75em 0;
+	width: 100%;
+	background: transparent;
+	color: $light-blue;
+	font-size: 1em;
+	display: block;
+	float: right;
+	border: none;
+	border-radius: 0;
+	font-weight: bold;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: $medium-blue;
+	text-align: left;
+	display: inline-block;
+	float: right;
+	color: $light-blue;
+	font-weight: bold;
+	font-size: 1.2em;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 1em 1em;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transition: -webkit-transform 0.3s, color 0.3s;
+	transition: transform 0.3s, color 0.3s;
+	text-rendering: geometricPrecision;
+}
+
+.input__label::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0px solid transparent;
+	-webkit-transition: border-width 0.3s, border-color 0.3s;
+	transition: border-width 0.3s, border-color 0.3s;
+}
+
+.input__field:focus + .input__label::before,
+.input--filled .input__label::before {
+	border-width: 6px;
+	border-color: $medium-blue;
+	border-top-width: 1.8em;
+	background: $white;
+}
+
+.input__field:focus + .input__label .input__label-content,
+.input--filled .input__label .input__label-content {
+	padding: 1.8em 1em;
+	color: $orange;
+	-webkit-transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1);
+	transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1) translateZ(1px);
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("../images/icons/icons-sprite.png") left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url("../images/icons/icons-sprite.png") -19px top no-repeat;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("../images/icons/icons-sprite.png") -38px top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background:url("../images/icons/icons-sprite.png") -57px top no-repeat;
+}
+
+textarea {
+	border: 1px solid $light-blue;
+}
+
+textarea:focus {
+	border: 1px solid $orange;
+}
+
 /* Plugins */
+
+.jumbotron {
+	min-height: 480px;
+	margin-top: -14px;
+	background: linear-gradient(rgba(5,35,53,0.5), rgba(5,35,53,0.5)), url("../images/hero-home.jpg") center top no-repeat;
+	background-size: cover;
+
+	h2 {
+		font-size: 6em;
+	}
+
+	p {
+		font-size: 2em;
+		color: $light-blue;
+	}
+}
+
+.btn {
+	width: 120px;
+	padding: 10px;
+	margin-top: 1.2em;
+	margin-right: 1.2em;
+	background-color: $medium-blue;
+	color: $light-blue;
+	border: 2px solid $light-blue;
+	border-radius: 0;
+	font-family: 'Raleway', Helvetica;
+	font-weight: bold;
+}
+
+.btn:hover, .btn:active, .btn:visited {
+	background-color: $medium-blue;
+	color: $orange;
+	border: 2px solid $orange;
+}
 
 /* Media Queries */

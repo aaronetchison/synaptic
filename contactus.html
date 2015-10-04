@@ -41,74 +41,88 @@
     <div class="col-sm-8"><!-- begin boxexp -->
   	  <form id="contactus" name="contactus" method="post" action=""><!-- begin form -->
         <h2>Contact Information</h2>
-        <p>
-  		    <label for="name">Name:</label>
-  		    <input type="text" name="name" id="name" />
-        </p>
-  	    <p>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" />
-        </p>
+
+        <span class="input">
+          <input class="input__field" type="text" id="name" />
+          <label class="input__label" for="name">
+            <span class="input__label-content">Name</span>
+          </label>
+        </span>
+
+        <span class="input">
+          <input class="input__field" type="text" id="email" />
+          <label class="input__label" for="email">
+            <span class="input__label-content">Email</span>
+          </label>
+        </span>
 
         <h3>What do you need our services for?</h3>
-  	      <p><span id="services">
-  	        <label>
-  	          <input type="radio" name="services" value="blog" id="services_1" />
-  	          Blog</label>
-  	        <br />
-  	        <label>
-  	          <input type="radio" name="services" value="portfolio" id="services_2" />
-  	          Portfolio</label>
-  	        <br />
-  	        <label>
-  	          <input type="radio" name="services" value="smallbusiness" id="services_3" />
-  	          Small Business</label>
-  	        <br />
-  	        <label>
-  	          <input type="radio" name="services" value="corporation" id="services_4" />
-  	          Corporation</label>
-  	        <br />
-  	        <label>
-  	          <input type="radio" name="services" value="government" id="services_5" />
-  	          Government</label>
-  	        <br />
-  	        <label>
-  	          <input type="radio" name="services" value="other" id="services_6" />
-  	          Other</label>
-  	        <br />
-            <span class="radioRequiredMsg">Please make a selection.</span></span></p>
+            <div>
+  	          <input type="radio" name="services" value="blog" id="services-1" />
+  	          <label for="services-1"><span></span>Blog</label>
+            </div>
+
+            <div>
+  	          <input type="radio" name="services" value="portfolio" id="services-2" />
+  	          <label for="services-2"><span></span>Portfolio</label>
+            </div>
+
+            <div>
+  	          <input type="radio" name="services" value="smallbusiness" id="services-3" />
+  	          <label for="services-3"><span></span>Small Business</label>
+            </div>
+
+            <div>
+  	          <input type="radio" name="services" value="corporation" id="services-4" />
+  	          <label for="services-4"><span></span>Corporation</label>
+            </div>
+
+            <div>
+  	          <input type="radio" name="services" value="government" id="services-5" />
+  	          <label for="services-5"><span></span>Government</label>
+            </div>
+
+            <div>
+  	          <input type="radio" name="services" value="other" id="services-6" />
+  	          <label for="services-6"><span></span>Other</label>
+            </div>
             
           <h3>What services do you think you will need?</h3>
-            <p>
-              <label>
-                <input type="checkbox" name="Work" value="webdesign" id="Work_0" />
-                Web Design</label>
-              <br />
-              <label>
-                <input type="checkbox" name="Work" value="appdev" id="Work_1" />
-                App Development</label>
-              <br />
-              <label>
-                <input type="checkbox" name="Work" value="branding" id="Work_2" />
-                Branding</label>
-              <br />
-              <label>
-                <input type="checkbox" name="Work" value="marketing" id="Work_3" />
-                Marketing</label>
-              <br />
-              <label>
-                <input type="checkbox" name="Work" value="content" id="Work_4" />
-                Content Creation</label>
-              <br />
-          </p>
+            <div>
+              <input type="checkbox" name="work" value="webdesign" id="work-0" />
+              <label for="work-0"><span></span>Web Design</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="work" value="appdev" id="work-1" />
+              <label for="work-1"><span></span>App Development</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="work" value="branding" id="work-2" />
+              <label for="work-2"><span></span>Branding</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="work" value="marketing" id="work-3" />
+              <label for="work-3"><span></span>Marketing</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="work" value="content" id="work-4" />
+              <label for="work-4"><span></span>Content Creation</label>
+            </div>
+
+
           <h3>Do you have any additional comments or questions?</h3>
-          <p>
+            <div>
               <textarea name="comments" id="comments" cols="75" rows="5"></textarea>
-            </p>
-            <p>
-              <input type="submit" name="submit" id="submit" value="Submit" />
-              <input type="reset" name="reset" id="reset" value="Reset" />
-            </p>
+            </div>
+
+            <div>
+              <input type="submit" name="submit" id="submit" class="submit" value="Submit" />
+              <input type="reset" name="reset" id="reset" class="reset" value="Reset" />
+            </div>
         </form><!-- end form -->
     </div><!-- end boxexp -->
     <div class="col-sm-4">

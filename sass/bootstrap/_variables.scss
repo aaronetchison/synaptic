@@ -113,7 +113,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
+$border-radius-base:        0 !default;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
@@ -159,9 +159,9 @@ $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-color:              $light-blue;
+$btn-primary-bg:                 $medium-blue;
+$btn-primary-border:             $light-blue;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
@@ -369,7 +369,7 @@ $container-lg:                 $container-large-desktop !default;
 
 // Basics of a navbar
 $navbar-height:                    50px !default;
-$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-margin-bottom:             0;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
@@ -377,7 +377,7 @@ $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $medium-blue;
 $navbar-default-bg:                $medium-blue;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-border:            none;
 
 // Navbar links
 $navbar-default-link-color:                $light-blue;

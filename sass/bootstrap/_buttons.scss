@@ -32,7 +32,8 @@
   &:hover,
   &:focus,
   &.focus {
-    color: $btn-default-color;
+    color: $orange;
+    border-color: $orange;
     text-decoration: none;
   }
 
