@@ -198,52 +198,40 @@ a:visited {
 	}
 }
 
-.skew-light, .skew-dark {
+.skew-light {
 	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 240px;
 }
 
 .skew-light::before { 
 	content: ''; 
 	position: absolute; 
-	top: 0; 
+	top: 120px; 
 	left: 0; 
-	height: 1080px; 
+	height: 960px; 
 	width: 100%; 
 	background: $medium-blue; 
-	transform: skew(0deg, -6deg); 
+	transform: skew(0deg, -6deg);
+}
+
+.skew-dark {
+	position: relative;
+	padding-top: 20px;
 }
 
 .skew-dark::before {
 	content: ''; 
 	position: absolute; 
-	top: 0; 
+	top: -120px; 
 	left: 0; 
 	height: 1080px; 
 	width: 100%; 
 	background: $dark-blue; 
-	transform: skew(0deg, -6deg); 
-}
-
-.skew-jumbotron::after {
-	content: ''; 
-	position: absolute; 
-	bottom: 60px; 
-	left: 0; 
-	height: 320px; 
-	width: 100%;
-	background: $dark-blue;
-	transform: skew(0deg, -6deg); 
+	transform: skew(0deg, -6deg);
 }
 
 /* Forms */
 
-form div {
-	margin-left: 10px;
-}
 
 form h3 {
 	margin-top: 1.2em;

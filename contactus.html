@@ -37,11 +37,16 @@
     </div>
   </nav>
   
-  <div class="container-fluid"><!-- begin content container -->
-    <div class="col-sm-8"><!-- begin boxexp -->
+  <div class="container-fluid">
+    <div class="col-xs-12">
+      <h2>Contacting Us</h2>
+    </div>
+  </div>
+
+  <div class="container-fluid skew-light"><!-- begin content container -->
   	  <form id="contactus" name="contactus" method="post" action=""><!-- begin form -->
         <h2>Contact Information</h2>
-
+        <div class="col-md-4">
         <span class="input">
           <input class="input__field" type="text" id="name" />
           <label class="input__label" for="name">
@@ -55,7 +60,8 @@
             <span class="input__label-content">Email</span>
           </label>
         </span>
-
+      </div>
+        <div class="col-md-4">
         <h3>What do you need our services for?</h3>
             <div>
   	          <input type="radio" name="services" value="blog" id="services-1" />
@@ -112,22 +118,21 @@
               <input type="checkbox" name="work" value="content" id="work-4" />
               <label for="work-4"><span></span>Content Creation</label>
             </div>
+          </div>
 
-
+          <div class="col-md-4">
           <h3>Do you have any additional comments or questions?</h3>
             <div>
-              <textarea name="comments" id="comments" cols="75" rows="5"></textarea>
+              <textarea name="comments" id="comments" cols="36" rows="5"></textarea>
             </div>
+          
 
             <div>
               <input type="submit" name="submit" id="submit" class="submit" value="Submit" />
               <input type="reset" name="reset" id="reset" class="reset" value="Reset" />
             </div>
+          </div>
         </form><!-- end form -->
-    </div><!-- end boxexp -->
-    <div class="col-sm-4">
-      <h2>Contacting Us</h2>
-    </div>
   </div><!-- end content container -->
 
   <div class="container-fluid">
