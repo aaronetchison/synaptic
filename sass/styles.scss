@@ -43,7 +43,7 @@ body {
 header {
 	margin: 0;
 	padding: 0;
-	background-color: $dark-blue;
+	background-color: $medium-blue;
 }
 
 nav a {
@@ -57,9 +57,8 @@ header img {
 }
 
 footer {
-	margin: 60px 0 0 0;
+	margin: 120px 0 0 0;
 	padding: 20px 0;
-	background-color: $dark-blue;
 }
 footer p {
 	font-size: 1em;
@@ -85,7 +84,7 @@ footer p {
 
 h1 {
 	font-family: 'Raleway', Geneva, sans-serif;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: bold;
 	color: $orange;
 	margin: 0;
@@ -123,14 +122,6 @@ p {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 0;
-}
-
-.col-sm-4 p, .col-sm-6 p, .col-sm-4 div, .col-sm-6 div {
-	padding: 0 2em;
-}
-
-.col-sm-4 h2 + p, .col-sm-6 > h2 + p, .col-sm-4 h2 + div, .col-sm-6 h2 + div {
-	border-left: 2px solid $medium-blue;
 }
 
 li {
@@ -201,6 +192,7 @@ a:visited {
 .skew-light {
 	position: relative;
 	padding-top: 240px;
+	padding-bottom: 120px;
 }
 
 .skew-light::before { 
@@ -224,11 +216,30 @@ a:visited {
 	position: absolute; 
 	top: -120px; 
 	left: 0; 
-	height: 1080px; 
+	height: 320px; 
 	width: 100%; 
 	background: $dark-blue; 
 	transform: skew(0deg, -6deg);
 }
+
+.section-about.skew-dark {
+	padding-top: 120px;
+}
+
+.section-about.skew-dark::before { 
+	top: 0;
+}
+
+.footer.skew-light {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer.skew-light::before {
+	height: 320px;
+	top: 120px;
+}
+
 
 /* Forms */
 
@@ -383,6 +394,7 @@ input[type="radio"]:checked + label span {
 }
 
 textarea {
+	width: 100%;
 	border: 1px solid $light-blue;
 }
 
@@ -411,14 +423,14 @@ textarea:focus {
 }
 
 .btn {
-	width: 120px;
+	width: 240px;
 	padding: 10px;
 	margin-top: 1.2em;
 	margin-right: 1.2em;
 	background-color: $medium-blue;
 	color: $light-blue;
 	border: 2px solid $light-blue;
-	border-radius: 0;
+	border-radius: 10px;
 	font-family: 'Raleway', Helvetica;
 	font-weight: bold;
 }
@@ -430,3 +442,88 @@ textarea:focus {
 }
 
 /* Media Queries */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+	.section-home.skew-light::before { 
+		top: 120px; 
+		height: 1280px; 
+	}
+
+	.section-about.skew-light::before { 
+		top: 120px; 
+		height: 1280px; 
+	}
+
+	.skew-dark::before {
+		top: -80px; 
+	}
+
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+	.section-home.skew-light::before { 
+		top: 120px; 
+		height: 1920px; 
+	}
+
+	.skew-dark::before {
+		top: -80px; 
+	}
+
+	.section-about.skew-dark::before { 
+		top: 0;
+		height: 720px;
+	}
+
+}
+@media all and (min-width: 0px) and (max-width: 479px) {
+	
+	.navbar-brand {
+		padding: 12px $navbar-padding-horizontal;
+	}
+
+	h1 {
+		font-size: 1.2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	.jumbotron {
+
+		h2 {
+			font-size: 2em;
+		}
+
+		p {
+			font-size: 1.2em;
+		}
+	}
+
+	.section-home.skew-light::before { 
+		top: 120px; 
+		height: 2800px; 
+	}
+
+	.section-about.skew-light::before { 
+		top: 120px; 
+		height: 1800px; 
+	}
+
+	.skew-dark::before {
+		top: -60px; 
+	}
+
+	.section-about.skew-dark::before { 
+		top: 0;
+		height: 1280px;
+	}
+
+}
