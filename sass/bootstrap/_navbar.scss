@@ -13,6 +13,7 @@
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
+  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -162,8 +163,8 @@
 
 .navbar-brand {
   float: left;
-  padding: 5px $navbar-padding-horizontal;
-  font-size: $font-size-large;
+  padding: 4px $navbar-padding-horizontal;
+  font-size: 1.2em;
   line-height: $line-height-computed;
   height: $navbar-height;
 
@@ -172,8 +173,14 @@
     text-decoration: none;
   }
 
-  > img {
-    display: block;
+  img {
+    float: left;
+    margin-top: 4px;
+  }
+
+   h1 {
+    display: inline-block;
+    margin-top: 0;
   }
 
   @media (min-width: $grid-float-breakpoint) {
