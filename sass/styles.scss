@@ -165,6 +165,58 @@ a:visited {
 	color: $light-blue;
 }
 
+.icons-social {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.icon-facebook {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+	background:url("../images/icons/icons-sprite.png") left -19px no-repeat;
+}
+
+.icon-facebook:hover {
+	background:url("../images/icons/icons-sprite.png") -34px -19px no-repeat;
+}
+
+.icon-twitter {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+	background:url("../images/icons/icons-sprite.png") left -53px no-repeat;
+}
+
+.icon-twitter:hover {
+	background:url("../images/icons/icons-sprite.png") -34px -53px no-repeat;
+}
+
+.icon-pinterest {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+	background:url("../images/icons/icons-sprite.png") left -87px no-repeat;
+}
+
+.icon-pinterest:hover {
+	background:url("../images/icons/icons-sprite.png") -34px -87px no-repeat;
+}
+
+.icon-instagram {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background:url("../images/icons/icons-sprite.png") left -121px no-repeat;
+}
+
+.icon-instagram:hover {
+	background:url("../images/icons/icons-sprite.png") -34px -121px no-repeat;
+}
+
 /* Page Styles */
 
 .module {
@@ -461,6 +513,7 @@ textarea:focus {
 	}
 
 	p {
+		max-width: 1080px;
 		font-size: 2em;
 		color: $white;
 	}
