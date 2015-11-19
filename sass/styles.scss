@@ -99,9 +99,16 @@ h2 {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 0;
-	padding-bottom: 0;
+	padding-bottom: 10px;
 	border-bottom: 2px solid $medium-blue;
+	border-left: 2px dotted $medium-blue;
 }
+
+.skew-light h2 {
+	border-bottom: 2px solid $light-blue;
+	border-left: 2px dotted $light-blue;
+}
+
 h3 {
 	font-family: 'Raleway', Geneva, sans-serif;
 	font-size: 1.5em;
