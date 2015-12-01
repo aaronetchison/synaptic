@@ -261,6 +261,8 @@
       }
       > li > a {
         line-height: $line-height-computed;
+        margin-top: 5px;
+        margin-bottom: 5px;
         &:hover,
         &:focus {
           background-image: none;

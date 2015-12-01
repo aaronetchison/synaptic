@@ -34,7 +34,7 @@ $white:									#FFFFFF;
 }
 
 body {
-	background-color: $dark-blue;
+	background-color: $medium-blue;
 	padding: 4em 0 0 0;
 	margin: 0;
 	font-size: 16px;
@@ -265,30 +265,16 @@ a:visited {
 .skew-dark::before {
 	content: ''; 
 	position: absolute; 
-	top: -120px; 
+	top: -130px; 
 	left: 0; 
-	height: 460px; 
+	height: 970px;  
 	width: 100%; 
 	background: $dark-blue; 
 	transform: skew(0deg, -6deg);
 }
 
-.section-about.skew-dark {
-	padding-top: 120px;
-}
-
-.section-about.skew-dark::before { 
-	top: 0;
-}
-
-.footer.skew-light {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-
 .footer.skew-light::before {
-	height: 320px;
-	top: 120px;
+	height: 640px;
 }
 
 .thumbnail {
@@ -297,9 +283,23 @@ a:visited {
 	border: 1px solid $dark-blue;
 }
 
-.logo-client {
-	display: inline-block;
-	margin: 0 10px 10px 0;
+.row-client {
+	margin: 0 10%;
+
+	.logo-client {
+		width: 28%;
+		height: auto;
+		display: inline-block;
+		margin: 0 2%;
+	}
+}
+
+.row-client.row-offset {
+	padding-left: 12%;
+
+	.logo-client {
+		width: 35%;
+	}
 }
 
 .hexa {
@@ -345,13 +345,19 @@ form div + h3 {
 	margin-top: 20px;
 }
 
+input, textarea {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+}
+
 .submit, .reset {
-	width: 120px;
+	width: 46%;
 	padding: 10px;
 	margin-top: 1.2em;
-	margin-right: 1.2em;
+	margin-right: 1%;
+	margin-left: 1%;
 	font-family: 'Raleway', Helvetica;
-	font-size: 1.6em;	
+	font-size: 1.2em;	
 	color: $light-blue;
 	background-color: $medium-blue;
 	border: 2px solid $light-blue;
@@ -371,7 +377,7 @@ form div + h3 {
 	display: block;
 	max-width: 350px;
 	width: calc(100% - 2em);
-	height: 4em;
+	height: 4.2em;
 	margin-bottom: 20px;
 	vertical-align: top;
 	border-radius: 4px;
@@ -386,7 +392,7 @@ form div + h3 {
 	display: block;
 	float: right;
 	z-index: 100;
-	padding: 1.5em 0.75em 0;
+	padding: 1.8em 1.2em 0;
 	width: 100%;
 	background: transparent;
 	color: $light-blue;
@@ -427,7 +433,7 @@ form div + h3 {
 	position: relative;
 	display: block;
 	width: 100%;
-	padding: .6em 1em;
+	padding: .4em 1em;
 	-webkit-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
 	-webkit-transition: -webkit-transform 0.3s, color 0.3s;
@@ -449,7 +455,7 @@ form div + h3 {
 
 .input__field:focus + .input__label::before,
 .input--filled .input__label::before {
-	border-width: 6px;
+	border-width: 4px;
 	border-color: $medium-blue;
 	border-top-width: 1.2em;
 	background: $white;
@@ -495,13 +501,15 @@ input[type="radio"]:checked + label span {
     background:url("../images/icons/icons-sprite.png") -57px top no-repeat;
 }
 
-textarea {
+textarea.comments {
 	width: 100%;
+	min-height: 4em;
+	color: $light-blue;
 	border: 1px solid $light-blue;
 	border-radius: 4px;
 }
 
-textarea:focus {
+textarea.comments:focus {
 	border: 1px solid $orange;
 }
 
@@ -548,42 +556,42 @@ textarea:focus {
 
 @media all and (min-width: 768px) and (max-width: 991px) {
 
-	.section-home.skew-light::before { 
-		top: 120px; 
-		height: 1280px; 
-	}
-
-	.section-about.skew-light::before { 
-		top: 120px; 
-		height: 1280px; 
-	}
-
 	.skew-dark::before {
 		top: -80px; 
-		height: 720px;
+		height: 980px;
+	}
+
+	.skew-light {
+		position: relative;
+		padding-top: 100px;
+		padding-bottom: 120px;
 	}
 
 	.skew-light::before {
 		height: 960px;
 	}
 
+	footer.skew-light::before {
+		height: 640px;
+	}
+
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
 
-	.section-home.skew-light::before { 
-		top: 120px; 
-		height: 1920px; 
+	.skew-light {
+		position: relative;
+		padding-top: 200px;
+		padding-bottom: 120px;
+	}
+
+	.skew-light::before {
+		height: 1920px;
 	}
 
 	.skew-dark::before {
 		top: -80px;
-		height: 960px; 
-	}
-
-	.section-about.skew-dark::before { 
-		top: 0;
-		height: 720px;
+		height: 1280px; 
 	}
 
 	.jumbotron {
@@ -634,25 +642,20 @@ textarea:focus {
 			font-size: 1.2em;
 		}
 	}
-
-	.section-home.skew-light::before { 
-		top: 120px; 
-		height: 2800px; 
+	
+	.skew-light {
+		position: relative;
+		padding-top: 200px;
+		padding-bottom: 120px;
 	}
 
-	.section-about.skew-light::before { 
-		top: 120px; 
-		height: 1800px; 
+	.skew-light::before {
+		height: 2800px;
 	}
 
 	.skew-dark::before {
 		top: -60px; 
-		height: 1280px;
-	}
-
-	.section-about.skew-dark::before { 
-		top: 0;
-		height: 1280px;
+		height: 1920px;
 	}
 
 }
