@@ -332,6 +332,37 @@ a:visited {
   transform: rotate(-60deg);
 }
 
+/* Service Rates */
+.service-card {
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: $medium-blue;
+
+	img {
+		float: left;
+		clear: left;
+		margin-right: 10px;
+	}
+
+	.service-description {
+		width: 60%;
+	}
+
+	.service-rate {
+		position: absolute;
+		top: 0;
+		right: 35px;
+		width: 120px;
+		text-align: center;
+
+		span {
+			font-size: 3em;
+		}
+	}
+}
+
 
 
 /* Forms */
