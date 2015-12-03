@@ -243,7 +243,7 @@ a:visited {
 .skew-light {
 	position: relative;
 	padding-top: 260px;
-	padding-bottom: 120px;
+	padding-bottom: 260px;
 }
 
 .skew-light::before { 
@@ -251,7 +251,7 @@ a:visited {
 	position: absolute; 
 	top: 120px; 
 	left: 0; 
-	height: 960px; 
+	height: 1080px; 
 	width: 100%; 
 	background: $medium-blue; 
 	transform: skew(0deg, -6deg);
@@ -267,7 +267,7 @@ a:visited {
 	position: absolute; 
 	top: -130px; 
 	left: 0; 
-	height: 970px;  
+	height: 1080px;  
 	width: 100%; 
 	background: $dark-blue; 
 	transform: skew(0deg, -6deg);
@@ -291,6 +291,7 @@ a:visited {
 		height: auto;
 		display: inline-block;
 		margin: 0 2%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -299,7 +300,13 @@ a:visited {
 
 	.logo-client {
 		width: 35%;
+		margin-bottom: 20px;
 	}
+}
+
+.row-feedback {
+	clear: left;
+	margin-bottom: 20px;
 }
 
 .hexa {
@@ -333,32 +340,44 @@ a:visited {
 }
 
 /* Service Rates */
-.service-card {
-	position: relative;
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 10px;
-	background-color: $medium-blue;
 
+.section-services {
 	img {
 		float: left;
-		clear: left;
+		width: 25%;
 		margin-right: 10px;
+	}
+}
+
+.service-card {
+	position: relative;
+	float: left;
+	width: 31.3%;
+	min-height: 560px;
+	margin-bottom: 10px;
+	padding: 1%;
+	background-color: $medium-blue;
+	border-raidus: 4px;
+
+	img {
+		width: 100%;
+		margin: 0 auto 10px auto;
+		border-radius: 4px;
 	}
 
 	.service-description {
-		width: 60%;
+
 	}
 
 	.service-rate {
 		position: absolute;
-		top: 0;
-		right: 35px;
-		width: 120px;
+		bottom: 20px;
+		margin: 0 auto;
 		text-align: center;
 
 		span {
-			font-size: 3em;
+			font-size: 2em;
+			color: $orange;
 		}
 	}
 }
@@ -687,6 +706,27 @@ textarea.comments:focus {
 	.skew-dark::before {
 		top: -60px; 
 		height: 1920px;
+	}
+
+	.section-services {
+		img {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	.service-card {
+		position: relative;
+		float: none;
+		width: 98%;
+		border-bottom: 2px dotted $light-blue;
+
+		img {
+			display: block;
+			width: 75%;
+			margin: 0 auto;
+		}
 	}
 
 }

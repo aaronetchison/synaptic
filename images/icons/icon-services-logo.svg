@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#0A4568" d="M63.5,109.5c-25.36,0-46-20.64-46-46s20.64-46,46-46s46,20.64,46,46S88.86,109.5,63.5,109.5z"/>
+			<path fill="#0099CC" d="M63.5,19.5c24.26,0,44,19.74,44,44s-19.74,44-44,44s-44-19.74-44-44S39.24,19.5,63.5,19.5 M63.5,15.5
+				c-26.51,0-48,21.49-48,48s21.49,48,48,48s48-21.49,48-48S90.01,15.5,63.5,15.5L63.5,15.5z"/>
+		</g>
+		<rect x="33.78" y="53.37" fill="none" width="61.21" height="25.98"/>
+		<text transform="matrix(1 0 0 1 33.7764 69.4453)" fill="#0099CC" font-family="'Raleway'" font-size="22.0184">LOG</text>
+	</g>
+	<line fill="none" stroke="#0099CC" stroke-linecap="round" stroke-miterlimit="10" x1="36" y1="74.5" x2="94" y2="74.5"/>
+</g>
+</svg>
