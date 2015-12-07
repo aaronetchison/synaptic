@@ -2,27 +2,26 @@
 <!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+	 width="128px" height="108px" viewBox="0 0 128 108" enable-background="new 0 0 128 108" xml:space="preserve">
 <g>
 	<g>
 		<g>
 			
-				<rect x="26.5" y="13.5" fill="#0A4568" stroke="#0099CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="56" height="83"/>
-			<rect x="32" y="20" fill="#0099CC" width="46" height="69"/>
+				<rect x="29.5" y="8.5" fill="#0A4568" stroke="#0099CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="52" height="77"/>
+			<rect x="34" y="14" fill="#0099CC" width="43" height="64"/>
 			
-				<line fill="none" stroke="#0099CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="59" y1="18" x2="52" y2="18"/>
-			<ellipse fill="#0099CC" cx="55.23" cy="92.58" rx="2.11" ry="1.79"/>
+				<line fill="none" stroke="#0099CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="59" y1="12" x2="53" y2="12"/>
+			<ellipse fill="#0099CC" cx="55.88" cy="81.18" rx="1.95" ry="1.66"/>
 		</g>
 	</g>
 	<g>
 		<g>
 			
-				<rect x="62.5" y="46.5" fill="#0A4568" stroke="#0099CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="39" height="67"/>
-			<rect x="66" y="52" fill="#0099CC" width="32" height="55"/>
+				<rect x="62.5" y="38.5" fill="#0A4568" stroke="#0099CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="36" height="62"/>
+			<rect x="66" y="44" fill="#0099CC" width="29" height="51"/>
 			
-				<line fill="none" stroke="#0099CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85" y1="50" x2="79" y2="50"/>
-			<path fill="#0099CC" d="M83.92,110.06c0,0.79-0.67,1.43-1.49,1.43c-0.82,0-1.49-0.64-1.49-1.43c0-0.79,0.67-1.43,1.49-1.43
-				C83.25,108.63,83.92,109.27,83.92,110.06z"/>
+				<line fill="none" stroke="#0099CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="83" y1="42" x2="78" y2="42"/>
+			<ellipse fill="#0099CC" cx="81.07" cy="97.36" rx="1.38" ry="1.33"/>
 		</g>
 	</g>
 </g>
