@@ -95,7 +95,7 @@ h2 {
 	font-size: 2em;
 	color: $orange;
 	margin: 0;
-	margin-bottom: 1.2em;
+	margin-bottom: .6em;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 0;
@@ -339,7 +339,7 @@ a:visited {
   transform: rotate(-60deg);
 }
 
-/* Service Rates */
+/* Service Rates Section */
 
 .section-services {
 	img {
@@ -612,6 +612,11 @@ textarea.comments:focus {
 		height: 980px;
 	}
 
+	.page-contact .skew-dark::before {
+		top: -80px;
+		height: 1200px;
+	}
+
 	.skew-light {
 		position: relative;
 		padding-top: 100px;
@@ -715,6 +720,11 @@ textarea.comments:focus {
 	.skew-dark::before {
 		top: -60px; 
 		height: 1920px;
+	}
+
+	.page-services .skew-dark::before {
+		top: -60px;
+		height: 2400px;
 	}
 
 	.section-services {
