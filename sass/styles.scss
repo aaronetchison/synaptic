@@ -401,7 +401,7 @@ input, textarea {
 }
 
 .submit, .reset {
-	width: 46%;
+	width: 47%;
 	padding: 10px;
 	margin-top: 1.2em;
 	margin-right: 1%;
@@ -619,7 +619,7 @@ textarea.comments:focus {
 
 	.skew-light {
 		position: relative;
-		padding-top: 100px;
+		padding-top: 200px;
 		padding-bottom: 120px;
 	}
 
@@ -633,6 +633,12 @@ textarea.comments:focus {
 
 	.service-card {
 		min-height: 460px;
+	}
+
+	form {
+		.contact-textarea h3 {
+			margin-top: 20px;
+		}
 	}
 
 }
@@ -668,6 +674,12 @@ textarea.comments:focus {
 	.service-card {
 		min-height: 460px;
 	}
+
+	form {
+		.contact-textarea h3 {
+			margin-top: 20px;
+		}
+	}	
 
 }
 @media all and (min-width: 0px) and (max-width: 479px) {
@@ -746,6 +758,12 @@ textarea.comments:focus {
 			display: block;
 			width: 75%;
 			margin: 0 auto;
+		}
+	}
+
+	form {
+		.contact-textarea h3 {
+			margin-top: 20px;
 		}
 	}
 
